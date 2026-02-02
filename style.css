@@ -7,6 +7,17 @@ body {
     background-attachment: fixed;
     cursor: url('cursor.cur') 40 40, auto;
 }
+.side-tabs {
+  float: left;
+  display: flex;
+    margin: 0 auto;
+    border-radius: 4px ;
+    background-image: linear-gradient(#e57500, #fc8500 , #e47700);
+    padding: 15px ;
+    width: 200px;
+    height: 5px;
+    margin-bottom: 15px;
+}
 .topheader {
     display: block;
     margin: 0 auto;
