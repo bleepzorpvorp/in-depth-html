@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(' https://i.pinimg.com/736x/70/fc/68/70fc6849afa1e9d51ea8ebee32f6f88c.jpg');
+    background-image: url('https://i.pinimg.com/736x/70/fc/68/70fc6849afa1e9d51ea8ebee32f6f88c.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,13 +18,24 @@ body {
     height: 16px;
     margin-bottom: 15px;
 }
-.decorationheader {
+.marquee-container {
      display: block;
     margin: 0 auto;
     border-radius: 4px ;
     padding: 15px ;
     width: 665px;
     height: 16px;
+}
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scrolling 20s linear infinite;
+}
+.marquee-track img {
+    height: 16px;
+    width: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
 }
 .mainpage {
    display: block;
