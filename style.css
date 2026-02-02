@@ -7,7 +7,6 @@ body {
     background-attachment: fixed;
     cursor: url('cursor.cur') 40 40, auto;
 }
-
 .topheader {
     display: block;
     margin: 0 auto;
@@ -18,24 +17,30 @@ body {
     height: 16px;
     margin-bottom: 15px;
 }
-.marquee-container {
-     display: block;
-    margin: 0 auto;
-    border-radius: 4px ;
-    padding: 15px ;
-    width: 665px;
-    height: 16px;
+.marquee-container { 
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 15px;
+  width: 665px;
+  height: 16px;
+  overflow: hidden;
+  position: relative; 
 }
 .marquee-track {
-    display: flex;
-    width: max-content;
-    animation: scrolling 20s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite; 
 }
 .marquee-track img {
-    height: 16px;
-    width: auto;
-    margin: 0 10px;
-    flex-shrink: 0;
+  height: 16px;
+  width: auto;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 .mainpage {
    display: block;
