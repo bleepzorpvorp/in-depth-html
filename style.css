@@ -18,6 +18,9 @@ body {
     height: 5px;
     margin-bottom: 15px;
 }
+.sidetabs-page {
+
+}
 .topheader {
     display: block;
     margin: 0 auto;
@@ -62,3 +65,22 @@ body {
    width: 660px;
    height: 500px;
 }
+.banner {
+  border: 20px solid;
+  border-image: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  position: relative;
+  margin-top: 20px; 
+}
+.banner-text {
+  position: absolute;
+   top: -0.5em; 
+  left: 50%; 
+  transform: translateX(-50%);
+  background: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+
+
+
