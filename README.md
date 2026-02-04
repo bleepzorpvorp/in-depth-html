@@ -12,6 +12,10 @@ https://www.w3schools.com/css/css3_borders.asp
 https://www.w3schools.com/css/css3_gradients.asp
 
 
+https://www.w3schools.com/css/css3_fonts.asp
+
+
+
 # Javascript
 
 https://www.w3schools.com/js/

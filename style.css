@@ -1,26 +1,40 @@
 
 body {
-    background-image: url('https://i.pinimg.com/736x/70/fc/68/70fc6849afa1e9d51ea8ebee32f6f88c.jpg');
+    background-image: url('files/windowsxp.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    cursor: url('cursor.cur') 40 40, auto;
+    cursor: url('files/cursor.cur') 40 40, auto;
+  font-family: 'New Caledonia LT Std', sans-serif;
+                                                
 }
-.side-tabs {
-  float: left;
-  display: flex;
-    margin: 0 auto;
-    border-radius: 4px ;
-    background-image: linear-gradient(#e57500, #fc8500 , #e47700);
-    padding: 15px ;
-    width: 200px;
-    height: 5px;
-    margin-bottom: 15px;
-}
-.sidetabs-page {
 
+.side-tabs-container {
+    display: flex;
+    align-items: stretch; 
+    gap: 0; 
 }
+
+.side-tabs {
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4px 0 0 4px; 
+    background-image: linear-gradient(#e57500, #fc8500, #e47700);
+    padding: 15px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.sidetabs-page {
+    flex: 1; 
+    border-radius: 0 4px 4px 0; 
+    background: whitesmoke;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
 .topheader {
     display: block;
     margin: 0 auto;
@@ -63,7 +77,7 @@ body {
    background: whitesmoke;
    padding: 15px;
    width: 660px;
-   height: 500px;
+   height: 1000px;
 }
 .banner {
   border: 20px solid;
@@ -79,6 +93,30 @@ body {
   background: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
   padding: 0 5px;
   font-size: 16px;
+}
+.biography-banner {
+ border: 20px solid;
+  border-image: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  position: relative;
+  margin-top: 275px; 
+}
+.bio-banner {
+  position: absolute;
+   top: -0.5em; 
+  left: 50%; 
+  transform: translateX(-50%);
+  background: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  padding: 0 5px;
+  font-size: 16px;
+}
+.site-description{
+  border: 20px solid;
+  border-image: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  position: relative;
+  margin-top: px; 
+}
+.site-banner {
+ 
 }
 
 
