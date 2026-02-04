@@ -17,6 +17,7 @@ body {
 }
 
 .side-tabs {
+  float: left;
     display: flex;
     flex-direction: column; 
     border-radius: 4px 0 0 4px; 
@@ -27,6 +28,8 @@ body {
 }
 
 .sidetabs-page {
+  float: left;
+  position: absolute
     flex: 1; 
     border-radius: 0 4px 4px 0; 
     background: whitesmoke;
@@ -118,7 +121,9 @@ body {
 .site-banner {
  
 }
-
+.sidetab-buttons {
+  
+}
 
 
 
