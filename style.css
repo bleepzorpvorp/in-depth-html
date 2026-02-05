@@ -17,7 +17,7 @@ body {
 }
 
 .side-tabs {
-  float: left;
+    align-items: left;
     display: flex;
     flex-direction: column; 
     border-radius: 4px 0 0 4px; 
@@ -30,12 +30,6 @@ body {
 .sidetabs-page {
   float: left;
   position: absolute
-    flex: 1; 
-    border-radius: 0 4px 4px 0; 
-    background: whitesmoke;
-    padding: 15px;
-    box-sizing: border-box;
-    height: 50px;
 }
 
 .topheader {
@@ -89,6 +83,8 @@ body {
   margin-top: 20px; 
 }
 .banner-text {
+  color: antiquewhite;
+  font-weight: 700;
   position: absolute;
    top: -0.5em; 
   left: 50%; 
@@ -104,6 +100,8 @@ body {
   margin-top: 275px; 
 }
 .bio-banner {
+  color: antiquewhite;
+  font-weight: 700;
   position: absolute;
    top: -0.5em; 
   left: 50%; 
@@ -113,17 +111,45 @@ body {
   font-size: 16px;
 }
 .site-description{
+  text-align: center;
   border: 20px solid;
   border-image: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
   position: relative;
   margin-top: px; 
 }
 .site-banner {
- 
+ border: 20px solid;
+  border-image: linear-gradient(to right, transparent, #c5690a, transparent) 1; 
+  position: relative;
+  margin-top: 300px; 
 }
 .sidetab-buttons {
   
 }
-
-
-
+.video-embed {
+  margin-top: 20px;
+  align-items: center;
+  border-radius: 5px solid;
+}
+.iframe {
+  align-items: center;
+}
+.live-chat-banner {
+  display: block;
+    margin: 45px auto;
+    border-radius: 4px ;
+    background-image: linear-gradient(#e57500, #fc8500 , #e47700);
+    padding: 15px ;
+    width: 665px;
+    height: 16px;
+    margin-bottom: 15px;
+}
+.live-chat {
+  display: block;
+   margin: 30px -15.5px;
+   border-radius: 3px;
+   background: whitesmoke;
+   padding: 15px;
+   width: 660px;
+   height: 400px;
+}
