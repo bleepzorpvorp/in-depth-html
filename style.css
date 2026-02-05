@@ -5,31 +5,45 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    cursor: url('files/cursor.cur') 40 40, auto;
+    /* add cursor that fits and allows animations to continue to runs smoothly */
   font-family: 'New Caledonia LT Std', sans-serif;
                                                 
 }
 
-.side-tabs-container {
-    display: flex;
-    align-items: stretch; 
-    gap: 0; 
-}
+
 
 .side-tabs {
+  border: 3px #e57500 solid;
     align-items: left;
     display: flex;
     flex-direction: column; 
     border-radius: 4px 0 0 4px; 
     background-image: linear-gradient(#e57500, #fc8500, #e47700);
     padding: 15px;
-    width: 200px;
+    width: 210px;
     box-sizing: border-box;
 }
 
-.sidetabs-page {
-  float: left;
-  position: absolute
+.sidetab-buttons a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color default (or set to black) */
+    display: inline-block; /* Required for transform to work properly */
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.sidetab-buttons a:hover {
+    transform: scale(1.1); /* Increases size by 10% on hover */
+}
+.sidetab-page {
+  border: 3px #e57500 solid;
+  text-align: center;
+  text-decoration: none; 
+margin-top: 0px; 
+   border-radius: 3px;
+   background: white;
+   padding: 15px;
+   width: 175px;
+   height: 150px;
 }
 
 .topheader {
@@ -43,6 +57,7 @@ body {
     margin-bottom: 15px;
 }
 .marquee-container { 
+  border: 2px #e57500 solid;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
@@ -68,6 +83,7 @@ body {
   to { transform: translateX(-50%); }
 }
 .mainpage {
+  border: 2px #e57500 solid;
    display: block;
    margin: 0 auto;
    border-radius: 3px;
@@ -123,17 +139,9 @@ body {
   position: relative;
   margin-top: 300px; 
 }
-.sidetab-buttons {
-  
-}
-.video-embed {
-  margin-top: 20px;
-  align-items: center;
-  border-radius: 5px solid;
-}
-.iframe {
-  align-items: center;
-}
+
+
+
 .live-chat-banner {
   display: block;
     margin: 45px auto;
@@ -145,6 +153,7 @@ body {
     margin-bottom: 15px;
 }
 .live-chat {
+  border: 2px #e57500 solid;
   display: block;
    margin: 30px -15.5px;
    border-radius: 3px;
