@@ -1,14 +1,31 @@
-
 body {
     background-image: url('files/windowsxp.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* add cursor that fits and allows animations to continue to runs smoothly */
-  font-family: 'New Caledonia LT Std', sans-serif;
-                                                
+    font-family: 'New Caledonia LT Std', sans-serif;
 }
+.content-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.side-tabs {
+    border-radius: 4px 4px 0 0;
+}
+
+.sidetab-page {
+    border-radius: 0 0 4px 4px;
+    margin-top: -3px; 
+}
+
 
 
 
@@ -24,15 +41,39 @@ body {
     box-sizing: border-box;
 }
 
+
+.side-tabs,
+.sidetab-page,
+.mainpage {
+  margin-top: 10px; 
+}
+
+
 .sidetab-buttons a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Keeps text color default (or set to black) */
-    display: inline-block; /* Required for transform to work properly */
-    transition: transform 0.3s ease; /* Smooth animation */
+    text-decoration: none;
+    color: inherit; 
+    display: inline-block; 
+    transition: transform 0.3s ease; 
 }
 
 .sidetab-buttons a:hover {
-    transform: scale(1.1); /* Increases size by 10% on hover */
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+.sidetab-page,
+.mainpage {
+  margin-top: 0; 
+}
+
+.sidetab-buttons a:hover {
+    transform: scale(1.1); 
 }
 .sidetab-page {
   border: 3px #e57500 solid;
@@ -52,17 +93,17 @@ margin-top: 0px;
     border-radius: 4px ;
     background-image: linear-gradient(#e57500, #fc8500 , #e47700);
     padding: 15px ;
-    width: 665px;
+    width: 900px;
     height: 16px;
     margin-bottom: 15px;
 }
 .marquee-container { 
-  border: 2px #e57500 solid;
+  border: 5px #e57500 solid;
   display: block;
-  margin: 0 auto;
+  margin: -5px auto;
   border-radius: 10px;
   padding: 15px;
-  width: 665px;
+  width: 900px;
   height: 16px;
   overflow: hidden;
   position: relative; 
@@ -83,9 +124,9 @@ margin-top: 0px;
   to { transform: translateX(-50%); }
 }
 .mainpage {
+  margin-top: 10px;
   border: 2px #e57500 solid;
    display: block;
-   margin: 0 auto;
    border-radius: 3px;
    background: whitesmoke;
    padding: 15px;
